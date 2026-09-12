@@ -1,5 +1,27 @@
 [build]
+  command = "python3 scripts/build.py"
   publish = "dist"
+
+[[redirects]]
+  from = "https://www.embroidhub.com/*"
+  to = "https://embroidhub.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/learn/mandarin-tones/index.html"
+  to = "/learn/mandarin-tones/"
+  status = 301
+
+[[redirects]]
+  from = "/about/index.html"
+  to = "/about/"
+  status = 301
 
 [[headers]]
   for = "/*"
